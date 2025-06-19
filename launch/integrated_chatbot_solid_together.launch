@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="integrated_chatbot" type="mainlaunchtogether.py" name="integrated_chatbot_node" output="screen">
+        <param name="image_folder" value="$(find integrated_chatbot)/data"/>
+        <param name="emotion_model" value="$(find integrated_chatbot)/models/emotion-ferplus-8.onnx"/>
+        <param name="robot_name" value="نور"/>
+        <param name="gender_proto" value="$(find integrated_chatbot)/models/gender_deploy.prototxt"/>
+        <param name="gender_model" value="$(find integrated_chatbot)/models/gender_net.caffemodel"/>
+        <param name="speech_timeout" value="5"/>
+        <param name="min_recognition_interval" value="10"/>
+        <env name="GOOGLE_API_KEY" value="AIzaSyCUt4qg0UV-ede0va3Z7AAQWp8tMIGLAKQ"/>
+        <env name="ALSA_DEBUG" value="0"/>
+    </node>
+</launch>

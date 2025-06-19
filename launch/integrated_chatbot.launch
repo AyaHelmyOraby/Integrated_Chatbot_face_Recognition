@@ -1,0 +1,10 @@
+<!-- integrated_chatbot.launch -->
+<launch>
+    <node pkg="integrated_chatbot" type="integrated_chatbot_node.py" name="integrated_chatbot" output="screen">
+        <param name="image_folder" value="$(find integrated_chatbot)/data"/>
+        <param name="emotion_model" value="$(find integrated_chatbot)/models/emotion-ferplus-8.onnx"/>
+        <param name="gender_proto" value="$(find integrated_chatbot)/models/gender_deploy.prototxt"/>
+        <param name="gender_model" value="$(find integrated_chatbot)/models/gender_net.caffemodel"/>
+        <param name="min_recognition_interval" value="10"/> <!-- seconds -->
+    </node>
+</launch>
