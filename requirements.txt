@@ -1,0 +1,9 @@
+opencv-contrib-python
+onnxruntime
+SpeechRecognition
+gTTS
+pydub
+arabic_reshaper
+python-bidi
+google-generativeai
+python-dotenv
