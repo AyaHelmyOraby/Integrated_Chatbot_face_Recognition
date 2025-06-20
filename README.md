@@ -93,6 +93,8 @@ catkin_ws/
     rosrun integrated_chatbot integrated_chatbot_node.py
     or
    roslaunch integrated_chatbot integrated_chatbot_solid.launch
+or 
+roslaunch integrated_chatbot integrated_chatbot_solid.launch  ( to run both camera and chatbot (need more capabilities for more performance)
 
 
     ```
