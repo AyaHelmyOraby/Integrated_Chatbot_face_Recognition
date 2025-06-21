@@ -190,11 +190,43 @@ integrated_chatbot/
 
 
 ---
+for vision_chatbot_pub_sub 
+
+
+
+## 📦 Project Structure
+
+```bash
+vision_chatbot/
+├── CMakeLists.txt
+├── package.xml
+├── launch/
+│   ├── vision_chatbot.launch
+│   └── vision_chatbot_solid.launch
+├── models/
+│   ├── emotion-ferplus-8.onnx
+│   ├── gender_deploy.prototxt
+│   └── gender_net.caffemodel
+├── data/                     # Known face images
+├── scripts/
+│   └── vision_chatbot_node.py
+├── src/
+├── config/
+└── README.md
 
 
 ---
 
-## 👨‍💻 Author
 
-Developed by [Aya Oraby]
----
+# Navigate to your workspace
+cd ~/catkin_ws
+
+# Build your package
+catkin_make
+
+# Source your workspace
+source devel/setup.bash
+
+# Run the node
+roslaunch vision_chatbot vision_chatbot.launch
+----
