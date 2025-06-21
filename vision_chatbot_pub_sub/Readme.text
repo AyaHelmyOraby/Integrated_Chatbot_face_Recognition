@@ -1,0 +1,19 @@
+turtlebot3_face_recognition  for facerecognition only 
+voice_chatbot for chatbotonly 
+
+integrated_chatbot for both 
+integrated_chatbot.launch    for all function in one file 
+integrated_chatbot_solid.launch    applying solid principle and separate functions in files and chatbot work after face  recognition
+ 
+integrated_chatbot_solid_together.launch   launch both camera and chatbot in the same time ( may be less performance for power consumption)
+
+vision_chatbot 
+
+apply publisher /subscriber concepts clearly (more than above explained in the report )
+
+vision_chatbot_soild   all functions in one
+vision_chatbot_soild   functions in files   - easy to refactor 
+
+models and data in the github repo  
+
+https://github.com/AyaHelmyOraby/Vision_chatbot

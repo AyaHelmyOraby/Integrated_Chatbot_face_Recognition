@@ -1,0 +1,3 @@
+vision_chatbot:
+  speech_timeout: 5
+  min_recognition_interval: 10

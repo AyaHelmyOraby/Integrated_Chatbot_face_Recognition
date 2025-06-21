@@ -1,0 +1,13 @@
+<launch>
+    <!-- Launch the Vision Chatbot node -->
+    <node pkg="vision_chatbot" type="main.py" name="vision_chatbot_node" output="screen">
+        <!-- Optional Parameters -->
+        <param name="image_folder" value="$(find vision_chatbot)/data" />
+        <param name="emotion_model" value="$(find vision_chatbot)/models/emotion-ferplus-8.onnx" />
+        <param name="gender_model" value="$(find vision_chatbot)/models/gender_net.caffemodel" />
+        <param name="gender_proto" value="$(find vision_chatbot)/models/gender_deploy.prototxt" />
+        <param name="speech_timeout" value="5" />
+        <param name="min_recognition_interval" value="10" />
+    </node>
+</launch>
+
